@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>BrasilPixel</title>
+    <link rel="icon" type="image/x-icon" href="/icones/logo2.png">
+  </head>
+  <body>
+    <div clas="container">
+      <div class="header">
+        <a href="index.html"><img id='main_icon' src='icones/logo2.png'/></a>
+        <a id='headerlink' href="index.html">Loja</a>
+        <a class='headerlink' href="#">Comunidade</a>
+        <a class='headerlink' href="#">Suporte</a>
+        <a class='headerlink' href="#">Distribuição</a>
+        <a href="login_page.html"><img id='user_icon' src='icones/iconeusuario.png'/></a>
+        <form method="post" action="fingimento.py" >
+          <select id="selectlang">
+              <option>Português</option>
+              <option>Español</option>
+              <option>English</option>
+              <option>Français</option>
+              <option>普通话</option>
+          </select>
+        </form>
+      </div>
+      <div class="content">
+        <div id="login">
+          <div id="login_menu">
+            <h1>Entrar na sua conta</h1>
+            <form method="post" action="loginpage.py">
+              <p>Usuário:</p>
+              <input type="text" placeholder="Email ou nome de usuário." required/>
+              <p>Senha:</p>
+              <input type="password" placeholder="Digite sua senha." required/>
+              <input type="submit"/>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footericons">
+          <a href="#"><img src="icones/facebookgray.png" /></a>
+          <a href="#"><img src="icones/instagramgray.png" /></a>
+          <a href="#"><img src="icones/twittergray.png" /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap');
+
+html,body{
+    margin:0;
+    font-family: 'Nunito', sans-serif;
+    color:#fffafa;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(194, 191, 184);
+    font-weight: bold;
+    margin-left:2em;
+}
+a:hover{
+    color:#fffafa;
+    /* background-color:#03243A;
+    border-radius:1em;
+    outline-width:5px;
+    outline-style:solid;
+    outline-color:#03243A */
+}
+.center{
+    width:90%;
+    margin: auto;
+}
+.container{
+    margin:0;
+    height:100%;
+}
+
+.header{
+    width:100%;
+    height:4em;
+    background-color: #001A23;
+    color:#fffafa;
+    position:relative;
+}
+
+.navbar{
+    width:100%;
+    height:2em;
+    background-color: #001A23;
+    color:#fffafa;
+    position: sticky;
+    top:0;
+    text-transform: uppercase;
+}
+.navbar #carrinho{
+    float:right;
+    margin-right:2em;
+}
+
+.content{
+    width:100%;
+    background-color: #03243A;
+    position:relative;
+}
+#main{
+    width: 755px;
+    margin:auto;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+#game{
+    float:left;
+    border-radius:0.5em;
+    width:550px;
+    height:325px;
+    background-color:#03243A;
+    background-image:url('games/game1full.jpg');
+    background-repeat:no-repeat;
+    background-size:550px 325px;
+}
+#sidegame{
+    display:inline-block;
+    width: 125px;
+    margin-left:-2em;
+}
+#sidegame img{
+    width: 125px;
+    height:60px;
+    border-radius:0.5em;
+    margin:0em 0em 0em 1em;
+    padding:0;
+    opacity:70%;
+    transition: transform .2s;
+}
+#sidegame img:hover{
+    opacity:100%;
+    transform: scale(1.2);
+}
+.horizontal_games{
+    padding:1em 0em 1em;
+    width:755px;
+    margin:auto;
+}
+.horizontal_games h1{
+    color:#fffafa;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    text-shadow: black 1px 1px;
+}
+.horizontal_games img{
+    display: inline-block;
+    width: 125px;
+    height: 60px;
+    margin: 1em -0.8em 1em -0.8em;
+    border-radius:0.5em;
+    transition: transform .2s;
+    opacity:75%;
+}
+.horizontal_games img:hover{
+    transform: scale(1.2);
+    opacity:100%;
+}
+#categorias{
+    /* padding:1em 0em 1em 15.6em; */
+    width:755px;
+    margin:auto;
+}
+#categorias img{
+    display: inline-block;
+    width:150px;
+    height:200px;
+    margin: 1em 0em 1em -0.8em;
+    border-radius:0.5em;
+    opacity:75%;
+    transition: transform .2s;
+}
+#categorias img:hover{
+    transform: scale(1.1);
+    opacity:100%;
+}
+#categorias h1{
+    color:#fffafa;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    text-shadow: black 1px 1px;
+}
+
+#pgame{
+    margin:0;
+    padding:1em;
+    position:relative;
+    top:45%;
+    font-weight: bold;
+    color:#fffafa;
+    text-shadow: black 1px 1px;
+}
+#h1game{
+    margin: 0;
+    padding:0.45em;
+    position:relative;
+    top:55%;
+    color:#fffafa;
+    text-shadow: black 1px 1px;
+}
+#buygame{
+    -webkit-appearance: none;
+    appearance: none;
+    position:relative;
+    top:45%;
+    left:-2.5%;
+    text-align:center;
+    color:black;
+    border-radius:0.5em;
+    display:inline-block;
+    background-color:white;
+    text-decoration:none;
+    border:none;
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+    cursor:pointer;
+    transition: transform .2s;
+}
+#buygame:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    height:5em;
+    width:100%;
+    background-color: #001A23;
+    text-transform:uppercase;
+    clear:both;
+}
+.footericons{
+    margin-left:1em;
+}
+.footericons img{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin: 1em -0.8em 1em -0.8em;
+    transition: transform .2s;
+}
+.footericons img:hover{
+    transform: scale(1.2);
+}
+
+#searchbar{
+    margin-left:2em;
+    border-radius:0.25em;
+    background-color: #1A1E23;
+    color:#fffafa;
+    box-sizing: border-box;
+    border: 2px solid #03243A;
+    width:7em;
+    height:2em;
+    transition: width 0.4s ease-in-out;
+    padding-left:1.2em;
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+    background-image: url('icones/iconepesquisa.png');
+    background-repeat: no-repeat;
+    background-size:0.8em;
+    background-position: 2px;
+}
+
+#searchbar:focus {
+    width:20%;
+    box-sizing: border-box;
+    border: 2px solid #03243A;
+    outline:none;
+}
+
+#main_icon{
+    width:3em;
+    margin-top:0.5em;
+    position:absolute;
+    border-radius:50%;
+}
+#user_icon{
+    width:1.5em;
+    margin-top:0.5em;
+    float:right;
+    margin-left:2em;
+    margin-right:2em;
+    margin-top:1.5em;
+}
+#globe_icon{
+    width:1.5em;
+    float:right;
+    margin-left:2em;
+    margin-top:1.5em;
+}
+
+.headerlink{
+    text-transform: uppercase;
+    display:inline-block;
+    margin-top:1.5em;
+}
+#headerlink{
+    text-transform: uppercase;
+    display:inline-block;
+    margin-top:1.5em;
+    margin-left:7.75em;
+}
+
+#selectlang{
+    -webkit-appearance: none;
+    appearance: none;
+    position:absolute;
+    bottom:1.15em;
+    left:89%;
+    background-color:#1A1E23;
+    color:#fffafa;
+    border-radius:0.25em;
+    justify-content: center;
+    align-items: center;
+    padding:0.25em;
+    cursor:pointer;
+    display: inline-flex;
+    
+}
+
+/* página de login */
+#login{
+    padding:2em;
+}
+#login h1{
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+#login_menu{
+    background-color:#1A1E23;
+    width:400px;
+    height:500px;
+    border-radius:1em;
+    margin:auto;
+}
+#login_menu input{
+    width:80%;
+    border-radius:1em;
+    border:2px solid #171d1f;
+    margin:1% 10%;
+    height:40px;
+    background-color:#171d1f;
+    font-family: 'Nunito', sans-serif;
+    font-weight:400;
+    color:#fffafa;
+}
+#login_menu input:focus{
+    outline:none;
+}
+#login_menu input[type=submit]{
+    background-color: #282c2e;
+}
+#login_menu input[type=submit]:hover{
+    cursor:pointer;
+}
+#login_menu p{
+    padding:1em 0px 0px;
+    margin:4px 40px -4px;
+}
