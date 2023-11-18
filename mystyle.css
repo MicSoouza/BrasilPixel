@@ -283,7 +283,7 @@ a:hover{
 /* página de login */
 #login{
     padding:2em;
-    height:100%;
+    min-height:100%;
 }
 #login h1{
     text-align:center;
