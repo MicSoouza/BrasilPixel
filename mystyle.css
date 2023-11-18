@@ -4,6 +4,7 @@ html,body{
     margin:0;
     font-family: 'Nunito', sans-serif;
     color:#fffafa;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -116,7 +117,6 @@ a:hover{
     opacity:100%;
 }
 #categorias{
-    /* padding:1em 0em 1em 15.6em; */
     width:755px;
     margin:auto;
 }
@@ -200,7 +200,9 @@ a:hover{
 .footericons img:hover{
     transform: scale(1.2);
 }
-
+.footer .footericons .topo{
+    margin: 0 2em 0 70em;
+}
 #searchbar{
     margin-left:2em;
     border-radius:0.25em;
@@ -284,12 +286,13 @@ a:hover{
 #login h1{
     text-align:center;
     margin:0;
-    padding:0;
+    padding:1em 0px 0px;
+    font-size:1.5em;
 }
 #login_menu{
     background-color:#1A1E23;
     width:400px;
-    height:500px;
+    height:450px;
     border-radius:1em;
     margin:auto;
 }
@@ -309,11 +312,79 @@ a:hover{
 }
 #login_menu input[type=submit]{
     background-color: #282c2e;
+    transition: transform .2s;
 }
 #login_menu input[type=submit]:hover{
     cursor:pointer;
+    transform: scale(1.05);
 }
 #login_menu p{
     padding:1em 0px 0px;
     margin:4px 40px -4px;
+}
+
+/* Página do jogo */
+
+.gamepage{
+    width:910px;
+    margin:auto;
+}
+.gamepage h1{
+    margin:0;
+    padding:1em 0em 0em;
+}
+.gamepage video{
+    width:900px;
+    height:520px;
+    padding:2em 0em 0em;
+    margin:auto;
+}
+.gamepics{
+    width:910px;
+    padding:2em 0em;
+}
+.gamepics img{
+    width:300px;
+    height:169px;
+}
+.gamepage .gamedesc{
+    display:inline-block;;
+    width:500px;
+    text-align:justify;
+}
+.gamepage .gamedesc img{
+    margin:1em 0em;
+    width:500px;
+    height:280px;
+}
+.gameoptions{
+    width:350px;
+    float:right;
+    margin:2em 0 0 0;
+}
+.gameoptions input[type=button]{
+    -webkit-appearance: none;
+    appearance: none;
+    width:175px;
+    margin:4px 2em 0px;
+    text-align:center;
+    color:black;
+    border-radius:0.5em;
+    background-color:white;
+    text-decoration:none;
+    border:none;
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+    cursor:pointer;
+    transition: transform .2s;
+    float:right;
+}
+.gameoptions input[type=button]:hover{
+    transform: scale(1.1);
+}
+.titleimg{
+    width:700px;
+    height:180px;
+    display: block;
+    margin:auto;
 }
