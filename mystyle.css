@@ -201,7 +201,8 @@ a:hover{
     transform: scale(1.2);
 }
 .footer .footericons .topo{
-    margin: 0 2em 0 70em;
+    margin: 0 2em 0 2em;
+    float:right;
 }
 #searchbar{
     margin-left:2em;
@@ -282,6 +283,7 @@ a:hover{
 /* página de login */
 #login{
     padding:2em;
+    height:100%;
 }
 #login h1{
     text-align:center;
