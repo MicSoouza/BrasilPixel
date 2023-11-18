@@ -51,9 +51,8 @@ a:hover{
 
 .content{
     width:100%;
-    height:100vh;
+    min-height:100vh;
     background-color: #03243A;
-
 }
 #main{
     width: 755px;
